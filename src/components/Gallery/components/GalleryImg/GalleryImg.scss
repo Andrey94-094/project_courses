@@ -1,0 +1,10 @@
+.gallery-img {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 550px;
+  &_center {
+    height: 360px;
+    object-fit: cover;
+  }
+}

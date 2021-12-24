@@ -1,0 +1,59 @@
+@import "./../../vars.scss";
+
+.button {
+  padding: 10px 30px;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  cursor: pointer;
+  &:hover {
+    color: rgba(255, 255, 255, 0.719);
+    border-color: rgba(255, 255, 255, 0.719);
+  }
+  &__welcome {
+    background-color: transparent;
+  }
+  &__orange {
+    background: #ff5126;
+    margin: 0 auto;
+    border: none;
+    cursor: auto;
+    &__pos {
+      background: #ff5126;
+      margin: 0 auto;
+      border: none;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+  }
+  &__yellow {
+    background: yellow;
+    margin: 0 auto;
+    border: none;
+    cursor: auto;
+    &__pos {
+      background: yellow;
+      margin: 0 auto;
+      border: none;
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+  }
+
+  &:disabled {
+    background-color: lightgray;
+  }
+
+  @media (max-width: $tablet) {
+    &_orangeForm {
+      background: #ff5126;
+      margin: 0 auto;
+      border: none;
+      max-width: 360px;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "./../../../../vars.scss";
+
+.input {
+  padding: 11px 13px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: none;
+  border: 1px solid #b3b3b3;
+  border-radius: 3px;
+  justify-content: space-around;
+  @media (max-width: $tablet) {
+    margin-right: 0;
+    max-width: 360px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

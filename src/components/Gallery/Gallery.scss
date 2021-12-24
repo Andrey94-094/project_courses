@@ -1,0 +1,35 @@
+@import "./../../vars.scss";
+
+.gallery {
+  padding: 100px 0;
+  @media (max-width: $netbook) {
+    padding-bottom: 40px;
+  }
+  @media (max-width: $phone) {
+    padding: 40px 0 0 0;
+  }
+  &__headSection {
+    margin-bottom: 80px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $netbook) {
+      flex-wrap: wrap;
+    }
+  }
+  &__column {
+    width: calc((100% - 40px) / 3);
+    @media (max-width: $netbook) {
+      width: calc((100% - 20px) / 2);
+    }
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+    &_width {
+      @media (max-width: $netbook) {
+        width: 100%;
+      }
+    }
+  }
+}

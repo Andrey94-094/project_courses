@@ -1,0 +1,53 @@
+@import "./../../vars.scss";
+
+.statistics {
+  background: url(./../../assets/Images/Statistics/stat_bg.jpeg) no-repeat;
+  background-size: cover;
+  background-position: 0 -443px;
+  min-height: 800px;
+  width: 100%;
+  background-position: inherit;
+  @media (max-width: $phone) {
+    min-height: 1000px;
+  }
+  &__container {
+    margin-top: -800px;
+  }
+  &__container-title {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-top: 105px;
+  }
+  &__headSection {
+    text-align: center;
+    max-width: 880px;
+    margin: 0 auto;
+    line-height: 2;
+    margin-bottom: 40px;
+    @media (max-width: $netbook) {
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    @media (max-width: $phone) {
+      line-height: 1;
+      font-size: 10px;
+    }
+  }
+  &__wrapper {
+    text-align: center;
+  }
+  &__inner {
+    max-width: 880px;
+    background: #fff;
+    padding: 42px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: $phone) {
+      padding: 30px;
+    }
+  }
+}

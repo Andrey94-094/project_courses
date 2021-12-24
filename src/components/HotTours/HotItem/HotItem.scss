@@ -1,0 +1,48 @@
+@import "./../../../vars.scss";
+
+.directions-cards-wrap {
+	width: 482px;
+	border: solid 1px #d9d9d9;
+	margin-bottom: 30px;
+	@media (max-width: $phone) {
+		width: 330px;
+	}
+
+	&__img {
+		width: 480px;
+		height: 260px;
+		@media (max-width: $phone) {
+			width: 330px;
+			height: 200px;
+		}
+	}
+
+	&__title {
+		font-family: Roboto, sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		text-transform: capitalize;
+		line-height: 1.2;
+		color: #454545;
+		padding: 30px 20px 20px;
+		text-align: left;
+		@media (max-width: $phone) {
+			font-size: 10px;
+		}
+	}
+
+	&__text {
+		font-family: "Open Sans", sans-serif;
+		font-weight: 400;
+		line-height: 2;
+		font-size: 16px;
+		color: #454545;
+		padding: 0 20px 50px 20px;
+		font-style: italic;
+		word-wrap: break-word;
+		text-align: left;
+		@media (max-width: $phone) {
+			font-size: 10px;
+		}
+	}
+}
